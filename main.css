@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333333;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+header img {
+  float: left;
+}
+nav {
+  margin: 0;
+  padding: 20px 0;
+}
+
+nav li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-block;
+  width: 80px;
+  margin-left: 50px
+}
+main {
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+main h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0px;
+  padding-top: 110px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+footer .container {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 20px;
+  padding: 0 10px;
+  text-align: center;
+ }
+.container .col {
+  text-align: left;
+
+}
+.jumbotron {
+  height: 300px;
+  background-image: url("Coder.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.jumbotron .container {
+  margin: 0 auto;
+}
+.supporting {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.supporting .col {
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.supporting p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
