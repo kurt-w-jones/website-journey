@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+<link href="./main.css" type="text/css" rel="stylesheet">
 <head lang="en">
-<title>Midlife-coder.com Error Page</title>
+<title>Midlife-Coder</title>
 <meta charset="utf-8">
-<meta name="description" content="Website Error">
+<meta name="description" content="Midlife-Coder">
+<meta keyword="mid-life coding, how to code, web development, midlife-coder">
 </head>
+<!-- Provide some styling and pagination for the nav menu -->
+<style>
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
 <body>
-<h1>SOMETHING HAS OCCURRED TO CAUSE AN ERROR</h1>
+  <!-- Build a small header for navigation at top -->
+  <header>
+          <img src="Coderlogo1.png">
+        <nav>
+          <ul>
+            <li> Home </li> <li> Projects </li> <li> Art Gallery </li> <li> About Me </li>
+          </ul>
+        </nav>
+    </header>
+  <!-- Build a jumbotron image on front page -->
+    <main>
+        <div class="jumbotron">
+          <div class="container">
+            <h1>Welcome to Midlife-Coder</h1>
+          </div>
+        </div>
+    </main>
+  <!-- Main page content section -->
+    <section class="supporting">
+        <div class="container">
+          <div class="col">
+            <h2> Oh No!  Something Has Gone Wrong</h2>
+          </div>
+    </section>
+  <!-- Footer section -->
+  <footer>
+        <div class="container">
+          <p>&copy; Midlife-Coder 2018</p>
+        </div>
+      </footer>
 </body>
 </html>
