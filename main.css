@@ -46,7 +46,7 @@ main h1 {
   font-weight: 600;
   font-size: 70px;
   margin-top: 0px;
-  padding-top: 110px;
+  padding-top: 100px;
   margin-bottom: 80px;
   text-transform: uppercase;
 }
@@ -68,19 +68,22 @@ footer p {
 }
 footer .contain {
   margin: 0 auto;
-
 }
-
-.contain {
+.contain h1 {
   max-width: 940px;
+  margin: 0 auto;
+}
+.contain {
+
   margin: 0 20px;
   padding: 0 10px;
   text-align: center;
  }
 .contain .col {
-  text-align: left;
-
+  text-align: center;
+  margin: 0 200px;
 }
+
 .jumbotron {
   height: 300px;
   background-image: url("./images/Coder.jpg");
@@ -96,12 +99,34 @@ footer .contain {
   padding-top: 80px;
   padding-bottom: 50px;
 }
-
+.supporting img {
+float: right;
+margin: 40px 40px;
+}
 .supporting .col {
   font-family: 'Raleway', sans-serif;
+}
+.supporting .col img {
+}
+.graph {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+  padding: 0 20px;
+  float:left;
+  margin-bottom: 120px;
+}
+ol.l {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+  padding: 0 20px;
+  text-align: justify;
+  text-indent: 8px;
 
 }
-
 .supporting h2 {
   font-weight: 600;
   font-size: 23px;
@@ -115,26 +140,24 @@ footer .contain {
   padding: 0 20px;
   margin-bottom: 20px;
 }
-/* for getting images next to one another */
-* {
-    box-sizing: border-box;
+
+.gallery {
+    margin-left: 175px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
 }
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
+
+.gallery:hover {
+    border: 1px solid #777;
 }
-.row {
-  margin-bottom: 20px;
+
+.gallery img {
+    width: 100%;
+    height: auto;
 }
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.images {
-  position:relative;
-  margin-bottom: 75px;
+
+.desc {
+    padding: 15px;
+    text-align: center;
 }
