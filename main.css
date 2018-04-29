@@ -17,15 +17,23 @@ nav {
   padding: 20px 0;
 }
 
-nav li {
+nav a {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  display: inline-block;
+  display:inline-block;
+  padding: 4px 4px;
+  text-align: center;
   width: 80px;
-  margin-left: 50px
+  margin-left: 70px;
+  margin-top: 30px;
+  float: left;
+  text-decoration:none;
 }
+nav a:hover{color: #000;background-color: #ccc;}
+nav a:active{background-color: #ccc;}
+
 main {
   text-align: center;
   position: relative;
@@ -58,34 +66,35 @@ footer p {
   text-transform: uppercase;
   font-size: 12px;
 }
-footer .container {
+footer .contain {
   margin: 0 auto;
+
 }
 
-.container {
+.contain {
   max-width: 940px;
   margin: 0 20px;
   padding: 0 10px;
   text-align: center;
  }
-.container .col {
+.contain .col {
   text-align: left;
 
 }
 .jumbotron {
   height: 300px;
-  background-image: url("Coder.jpg");
+  background-image: url("./images/Coder.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.jumbotron .container {
+.jumbotron .contain {
   margin: 0 auto;
 }
 .supporting {
   padding-top: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .supporting .col {
@@ -105,4 +114,27 @@ footer .container {
   line-height: 20px;
   padding: 0 20px;
   margin-bottom: 20px;
+}
+/* for getting images next to one another */
+* {
+    box-sizing: border-box;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row {
+  margin-bottom: 20px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.images {
+  position:relative;
+  margin-bottom: 75px;
 }
