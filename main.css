@@ -143,13 +143,23 @@ ol.l {
   margin-bottom: 20px;
 }
 
+.gallerycontain {
+  display: grid;
+  width: 940px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: absolute;
+}
 .gallery {
+    display: grid;
+    grid-template-rows: repeat(4, 60px);
     margin-left: 175px;
     border: 1px solid #ccc;
-    float: left;
     width: 250px;
+    justify-content: space-around;
 }
-
+.gallery .desc {
+  margin-top: 115px;
+}
 .gallery:hover {
     border: 1px solid #777;
 }
