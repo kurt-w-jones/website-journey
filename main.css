@@ -34,7 +34,25 @@ nav a {
 nav a:hover{color: #000;background-color: #ccc;}
 nav a:active{background-color: #ccc;}
 
+dl {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 20px;
+  padding: 0 20px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
+.jumbotron {
+  position: relative;
+  height: 250px;
+  background-image: url("./images/Coder.jpg");
+  background-size: cover;
+}
+
 main {
+  display: block;
   text-align: center;
   position: relative;
   top: 80px;
@@ -45,90 +63,37 @@ main h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 70px;
-  margin-top: 0px;
-  padding-top: 100px;
-  margin-bottom: 80px;
+  padding-top: 75px;
   text-transform: uppercase;
+  margin: 0px 250px 80px 250px;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-footer .contain {
-  margin: 0 auto;
 }
 .contain h1 {
-  max-width: 940px;
+  max-width: 840px;
   margin: 0 auto;
+  grid-column-start: 2;
 }
 .contain {
-
-  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 940px 1fr;
   padding: 0 10px;
-  text-align: center;
+  text-align: justify;
  }
 .contain .col {
-  text-align: center;
-  margin: 0 200px;
+  grid-column-start: 2;
 }
 
-.jumbotron {
-  height: 300px;
-  background-image: url("./images/Coder.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.jumbotron .contain {
-  margin: 0 auto;
-}
+
+
 .supporting {
-  padding-top: 80px;
-  padding-bottom: 50px;
-}
-.supporting img {
-float: right;
-margin: 40px 40px;
+margin-top: 75px;
+margin-bottom: 75px;
 }
 .supporting .col {
   font-family: 'Raleway', sans-serif;
 }
-.supporting .col img {
-}
-.graph {
-  font-weight: 400;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  line-height: 20px;
-  padding: 0 20px;
-  float:left;
-  margin-bottom: 120px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-ol.l {
-  font-weight: 400;
-  font-size: 14px;
-  font-family: 'Raleway', sans-serif;
-  line-height: 20px;
-  padding: 0 20px;
-  text-align: justify;
-  text-indent: 8px;
 
-}
 .supporting h2 {
   font-weight: 600;
   font-size: 23px;
@@ -145,17 +110,16 @@ ol.l {
 
 .gallerycontain {
   display: grid;
-  width: 940px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 940px 1fr;
   position: absolute;
 }
 .gallery {
     display: grid;
     grid-template-rows: repeat(4, 60px);
-    margin-left: 175px;
+
     border: 1px solid #ccc;
-    width: 250px;
-    justify-content: space-around;
+    width: 200px;
+    justify-content: space-evenly;
 }
 .gallery .desc {
   margin-top: 115px;
@@ -172,4 +136,25 @@ ol.l {
 .desc {
     padding: 15px;
     text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  grid-column-start: 2;
+}
+
+footer .contain {
+  text-align: center;
 }
