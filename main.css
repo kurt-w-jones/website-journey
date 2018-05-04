@@ -175,5 +175,17 @@ footer p {
 }
 
 footer .contain {
-  text-align: center;
+  text-align:center;
+}
+@media screen and (max-width: 600px) {
+  .nav a {
+    float:none;
+    width: 100%;
+      }
+  .supporting {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .supporting {width: 50%;}
 }
