@@ -177,15 +177,33 @@ footer p {
 footer .contain {
   text-align:center;
 }
-@media screen and (max-width: 600px) {
-  .nav a {
-    float:none;
+@media screen and (max-width: 667px) {
+  nav a {
+    text-align: left;
     width: 100%;
+    display: block;
+    float: none;
+    margin-top: 10px;
+    margin-left: 125px;
       }
   .supporting {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  main h1 {
+    font-size: 20px;
     width: 100%;
   }
 }
 @media screen and (max-width: 992px) {
   .supporting {width: 50%;}
+  .main {width: 50%;}
+  main h1 {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 25px;
+  }
 }
