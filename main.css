@@ -9,9 +9,11 @@ header {
   width: 100%;
   z-index: 2;
 }
+
 header img {
   float: left;
 }
+
 nav {
   margin: 0;
   padding: 20px 0;
@@ -22,17 +24,24 @@ nav a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  display:inline-block;
+  display: inline-block;
   padding: 4px 4px;
   text-align: center;
   width: 80px;
   margin-left: 70px;
   margin-top: 30px;
   float: left;
-  text-decoration:none;
+  text-decoration: none;
 }
-nav a:hover{color: #000;background-color: #ccc;}
-nav a:active{background-color: #ccc;}
+
+nav a:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+nav a:active {
+  background-color: #ccc;
+}
 
 dl {
   grid-column-start: 2;
@@ -68,7 +77,6 @@ main h1 {
   margin: 0px 250px 80px 250px;
 }
 
-
 /*.contain h1 {
   max-width: 840px;
   margin: 0 auto;
@@ -89,16 +97,15 @@ dd {
 }
 
 .supporting {
-    display: grid;
+  display: grid;
   font-family: 'Raleway', sans-serif;
-margin-top: 75px;
-margin-bottom: 75px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   grid-template-columns: 1fr 940px 1fr;
   grid-column-start: 2;
   padding: 0 10px;
   text-align: justify;
 }
-
 
 /*.supporting .col {
   font-family: 'Raleway', sans-serif;
@@ -108,11 +115,11 @@ margin-bottom: 75px;
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
-    grid-column-start: 2;
+  grid-column-start: 2;
 }
+
 .h3 {
   grid-column-start: 2;
-
 }
 
 .supporting p {
@@ -127,34 +134,37 @@ margin-bottom: 75px;
 .supporting img {
   grid-column-start: 2;
 }
+
 .gallerycontain {
   display: grid;
   grid-template-columns: 1fr 940px 1fr;
   position: absolute;
 }
-.gallery {
-    display: grid;
-    grid-template-rows: repeat(4, 60px);
 
-    border: 1px solid #ccc;
-    width: 200px;
-    justify-content: space-evenly;
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(4, 60px);
+  border: 1px solid #ccc;
+  width: 200px;
+  justify-content: space-evenly;
 }
+
 .gallery .desc {
   margin-top: 115px;
 }
+
 .gallery:hover {
-    border: 1px solid #777;
+  border: 1px solid #777;
 }
 
 .gallery img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .desc {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 footer {
@@ -175,8 +185,9 @@ footer p {
 }
 
 footer .contain {
-  text-align:center;
+  text-align: center;
 }
+
 @media screen and (max-width: 667px) {
   nav a {
     text-align: left;
@@ -185,7 +196,7 @@ footer .contain {
     float: none;
     margin-top: 10px;
     margin-left: 125px;
-      }
+  }
   .supporting {
     width: 100%;
   }
@@ -197,9 +208,14 @@ footer .contain {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 992px) {
-  .supporting {width: 50%;}
-  .main {width: 50%;}
+  .supporting {
+    width: 50%;
+  }
+  .main {
+    width: 50%;
+  }
   main h1 {
     font-size: 20px;
     width: 100%;
