@@ -1,6 +1,8 @@
+/* Resetting any values */
+
 html, body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 header {
@@ -8,15 +10,37 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
+  font-family: 'Raleway', sans-serif;
 }
 
 header img {
   float: left;
 }
 
+#menu-item {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background: #000 url("./images/menu-icon.png") center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#menu-item a:hover {
+  background-color: #ccc;
+  border-radius: 4px 4px 0 0;
+}
+
 nav {
-  margin: 0;
-  padding: 20px 0;
+  float: right;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+  margin-right: 10px;
 }
 
 nav a {
@@ -24,14 +48,8 @@ nav a {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  display: inline-block;
-  padding: 4px 4px;
-  text-align: center;
-  width: 80px;
-  margin-left: 70px;
-  margin-top: 30px;
-  float: left;
   text-decoration: none;
+  padding: 4px 4px;
 }
 
 nav a:hover {
@@ -43,183 +61,212 @@ nav a:active {
   background-color: #ccc;
 }
 
-dl {
-  grid-column-start: 2;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 20px;
-  text-align: justify;
-  margin-bottom: 100px;
+.current {
+  font-size: 18px;
+  text-decoration: underline;
 }
 
-.jumbotron {
+#jumbotron {
   position: relative;
   height: 250px;
   background-image: url("./images/Coder.jpg");
-  background-size: cover;
-}
-
-main {
-  display: block;
+  background-position: center center;
+  width: 100%;
   text-align: center;
-  position: relative;
-  top: 80px;
+  display: block;
 }
 
-main h1 {
+#theading {
+  padding-top: 110px;
+}
+
+h1 {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  font-size: 70px;
-  padding-top: 75px;
+  font-size: 50px;
   text-transform: uppercase;
-  margin: 0px 250px 80px 250px;
+  margin: 0px 250px 0px 250px;
+  padding-top: 20px;
 }
 
-/*.contain h1 {
-  max-width: 840px;
-  margin: 0 auto;
-  grid-column-start: 2;
-}
-/*.contain {
-  display: grid;
-  grid-template-columns: 1fr 940px 1fr;
-  padding: 0 10px;
-  text-align: justify;
- }
-/*.contain .col {
-  grid-column-start: 2;
-}*/
-
-dd {
-  margin-bottom: 10px;
-}
-
-.supporting {
-  display: grid;
-  font-family: 'Raleway', sans-serif;
-  margin-top: 75px;
-  margin-bottom: 75px;
-  grid-template-columns: 1fr 940px 1fr;
-  grid-column-start: 2;
-  padding: 0 10px;
-  text-align: justify;
-}
-
-/*.supporting .col {
-  font-family: 'Raleway', sans-serif;
-}*/
-
-.h2 {
+h2 {
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
-  grid-column-start: 2;
 }
 
-.h3 {
-  grid-column-start: 2;
+.supporting {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 10px;
 }
 
-.supporting p {
-  grid-column-start: 2;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 20px;
-  margin-bottom: 20px;
+p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
-.supporting img {
-  grid-column-start: 2;
+dl {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+#checklist {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .gallerycontain {
   display: grid;
-  grid-template-columns: 1fr 940px 1fr;
-  position: absolute;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
-.gallery {
-  display: grid;
-  grid-template-rows: repeat(4, 60px);
-  border: 1px solid #ccc;
-  width: 200px;
-  justify-content: space-evenly;
+#gallery1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
 }
 
-.gallery .desc {
-  margin-top: 115px;
+#gallery2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
 }
 
-.gallery:hover {
-  border: 1px solid #777;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 12px;
+#gallery3 {
   grid-column-start: 2;
+  grid-row-start: 1;
 }
 
-footer .contain {
-  text-align: center;
+#gallery4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
+
+/*MEDIA QUERY larger screens*/
 
 @media screen and (max-width: 667px) {
-  nav a {
-    text-align: left;
+  header {
+    width: 96%;
+  }
+  #menu-item {
+    display: inline-block;
+    visibility: visible;
+  }
+  #jumbotron {
     width: 100%;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #444;
+    align-items: center;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    color: #000;
+  }
+  nav ul li {
+    padding: 5px;
+    width: 100px;
+  }
+  nav:hover ul {
     display: block;
-    float: none;
-    margin-top: 10px;
-    margin-left: 125px;
   }
-  .supporting {
-    width: 100%;
+  nav a {
+    color: #000;
   }
-  .main {
-    width: 100%;
+  h1 {
+    margin: auto;
+    padding-top: 0px;
   }
-  main h1 {
-    font-size: 20px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .supporting {
+  .gallerycontain {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
   }
-  .main {
-    width: 50%;
+  #gallery1 #gallery2 #gallery3 #gallery4 {
+    display: block;
   }
-  main h1 {
-    font-size: 20px;
-    width: 100%;
-    margin-top: 100px;
-    padding-top: 25px;
-  }
-}
+  /*smaller phone screens */
+  @media screen and (max-width: 375px) {
+    header {
+      width: 375px;
+    }
+    #menu-item {
+      display: inline-block;
+      visibility: visible;
+    }
+    #jumbotron {
+      width: 100%;
+    }
+    nav ul, nav:active ul {
+      display: none;
+      position: absolute;
+      padding: 10px;
+      background: #fff;
+      border: 5px solid #444;
+      right: 20px;
+      top: 60px;
+      width: 40%;
+      border-radius: 4px 0 4px 4px;
+    }
+    nav li {
+      text-align: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0;
+      color: #000;
+    }
+    nav ul li {
+      padding: 5px;
+      width: 100px;
+    }
+    nav:hover ul {
+      display: block;
+    }
+    nav a {
+      color: #000;
+    }
+    h1 {
+      margin: auto;
+      padding-top: 0px;
+    }
+    #theading {
+      padding-top: 80px;
+    }
+    .gallerycontain {
+      display: block;
+      grid-template-columns: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 375px;
+    }
+    #gallery1 #gallery2 #gallery3 #gallery4 {
+      display: block;
+      width: 375px;
+    }

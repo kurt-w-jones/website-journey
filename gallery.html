@@ -13,20 +13,30 @@
 <body>
   <!-- Build a small header for navigation at top -->
   <header>
-          <img src="./images/Coderlogo1.png">
-        <nav>
-            <a href="index.html" class="w3-button"> Home </a>
-            <a href="projects.html" class="w3-button"> Projects </a>
-           <a href="gallery.html" class="w3-button"> Art Gallery </a>
-           <a href="about.html" class="w3-button"> About Me </a>
-          </nav>
-    </header>
-<!-- Build a jumbotron image on front page -->
-<main>
-      <div class="jumbotron">
-          <h1>Welcome to Midlife-Coder</h1>
-      </div>
-</main>
+    <img src="./images/Coderlogo1.png" alt="coffee cup logo with Coder on it">
+
+    <nav>
+
+      <a href="#" id="menu-item"></a>
+
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="projects.html"> Projects </a></li>
+        <li><a href="gallery.html" class="current"> Art Gallery </a></li>
+        <li><a href="about.html"> About Me </a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Build a jumbotron image with centered text below menu -->
+  <section id="jumbotron">
+
+      <h1 id="theading">Welcome to</h1>
+      <h1>Midlife-Coder</h1>
+
+  </section>
 <!-- Main page content section -->
   <section class="supporting">
 
@@ -35,28 +45,28 @@
 
 </section>
 <div class="gallerycontain">
-  <div class="gallery">
+  <div id="gallery1">
     <a target="_blank" href="./images/Chibis.png">
       <img src="./images/Chibis.png" alt="Chibis" width="400" height="300">
     </a>
     <div class="desc">Animated Chibis Cat</div>
   </div>
 
-  <div class="gallery">
+  <div id="gallery2">
     <a target="_blank" href="./images/Resentfull.png">
       <img src="./images/Resentfull.png" alt="Resentfull" width="400" height="300">
     </a>
     <div class="desc">Animated Cat Looking Resentful</div>
   </div>
 
-  <div class="gallery">
+  <div id="gallery3">
     <a target="_blank" href="./images/Sketch.png">
       <img src="./images/Sketch.png" alt="Sketch" width="400" height="300">
     </a>
     <div class="desc">Animated Cat Sketch</div>
   </div>
 
-  <div class="gallery">
+  <div id="gallery4">
     <a target="_blank" href="./images/Creeping.png">
       <img src="./images/Creeping.png" alt="Creeping" width="400" height="300">
     </a>
