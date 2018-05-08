@@ -4,7 +4,10 @@ html, body {
   padding: 0;
   margin: 0;
 }
-
+body {
+  display:flex;
+  flex-direction:column;
+}
 header {
   background-color: #333333;
   position: fixed;
@@ -107,6 +110,12 @@ p {
   margin-right: auto;
   width: 60%;
 }
+.resume {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
 
 dl {
   display: block;
@@ -136,6 +145,11 @@ dl {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  margin-bottom: 80px;
+}
+
+#desc {
+  font-family: 'Raleway', sans-serif;
 }
 
 #gallery1 {
@@ -158,11 +172,24 @@ dl {
   grid-row-start: 2;
 }
 
-/*MEDIA QUERY larger screens*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 0;
 
-@media screen and (max-width: 667px) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  flex: 0 0 50px;
+  margin-top: auto;
+}
+
+/*MEDIA QUERY larger tablet screens*/
+
+@media screen and (max-width: 604px) {
   header {
-    width: 96%;
+    width: 100%;
   }
   #menu-item {
     display: inline-block;
@@ -178,8 +205,9 @@ dl {
     background: #fff;
     border: 3px solid #444;
     align-items: center;
+    right: 1px;
     top: 60px;
-    width: 50%;
+    width: 20%;
     border-radius: 4px 0 4px 4px;
   }
   nav li {
@@ -192,6 +220,7 @@ dl {
   nav ul li {
     padding: 5px;
     width: 100px;
+    display: block;
   }
   nav:hover ul {
     display: block;
@@ -227,12 +256,12 @@ dl {
     nav ul, nav:active ul {
       display: none;
       position: absolute;
-      padding: 10px;
+      padding: 5px;
       background: #fff;
       border: 5px solid #444;
-      right: 20px;
+      right: 1px;
       top: 60px;
-      width: 40%;
+      width: 30%;
       border-radius: 4px 0 4px 4px;
     }
     nav li {
@@ -266,7 +295,18 @@ dl {
       margin-right: auto;
       width: 375px;
     }
-    #gallery1 #gallery2 #gallery3 #gallery4 {
-      display: block;
+    #gallery1 img {
+      width: 375px;
+    }
+    #gallery2 img {
+      width: 375px;
+    }
+    #gallery3 img {
+      width: 375px;
+    }
+    #gallery4 img {
+      width: 375px;
+    }
+    footer {
       width: 375px;
     }
