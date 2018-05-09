@@ -4,10 +4,12 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
 body {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
+
 header {
   background-color: #333333;
   position: fixed;
@@ -19,6 +21,8 @@ header {
 header img {
   float: left;
 }
+
+/* These 2 items are small menu icon that stays hidden unless the screen sizes are for mobile devices.  It will then replace the horizontal nav with a small nav from this icon */
 
 #menu-item {
   visibility: hidden;
@@ -33,6 +37,8 @@ header img {
   background-color: #ccc;
   border-radius: 4px 4px 0 0;
 }
+
+/* The next 3 items line up the navigation menu */
 
 nav {
   float: right;
@@ -55,6 +61,8 @@ nav a {
   padding: 4px 4px;
 }
 
+/* Makes the color behind the nav item change when hovered and active */
+
 nav a:hover {
   color: #000;
   background-color: #ccc;
@@ -64,10 +72,14 @@ nav a:active {
   background-color: #ccc;
 }
 
+/* Makes the nav item underlined and bigger when on that page */
+
 .current {
   font-size: 18px;
   text-decoration: underline;
 }
+
+/* makes a jumbo image below the navigation for stylizing purposes */
 
 #jumbotron {
   position: relative;
@@ -79,9 +91,13 @@ nav a:active {
   display: block;
 }
 
+/* used this item to better align the heading on top of the jumbotron */
+
 #theading {
   padding-top: 110px;
 }
+
+/* stylizing the headings with next 2 items */
 
 h1 {
   color: #fff;
@@ -99,9 +115,15 @@ h2 {
   text-transform: uppercase;
 }
 
+/* used the supporting class for most main sections of pages to assure alignment */
+
 .supporting {
   font-family: 'Raleway', sans-serif;
   margin-left: 10px;
+}
+
+.supporting p {
+  width: 70%;
 }
 
 p {
@@ -110,12 +132,8 @@ p {
   margin-right: auto;
   width: 60%;
 }
-.resume {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
+
+/* used the dl and checklist items on index page to better line up instruction steps I was providing */
 
 dl {
   display: block;
@@ -130,12 +148,16 @@ dl {
   width: 60%;
 }
 
+/* used this on the projects page to help align the architecture diagram to be responsive */
+
 .responsive {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
+
+/* used a grid system to better align the photos on the gallery page and put them in columns and rows where needed.  The next 6 items are part of it */
 
 .gallerycontain {
   display: grid;
@@ -172,17 +194,46 @@ dl {
   grid-row-start: 2;
 }
 
+/* footer stylizing */
+
 footer {
   background-color: #333;
   color: #fff;
   padding: 5px 0;
-
   bottom: 0;
   left: 0;
   width: 100%;
-
   flex: 0 0 50px;
   margin-top: auto;
+}
+
+#footerid {
+  text-align: center;
+}
+/* Setup Biography table for the About page elements */
+
+#backgroundimage {
+  height: 180px;
+  background-image: url("./images/Coder.jpg");
+  background-position: center center;
+  background-color: #ccc;
+  opacity: 0.4;
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+#backgroundimage p {
+  font-size: 72px;
+  font-weight: 500px;
+  text-align: center;
+  color: #000
+}
+
+#jobrole p {
+  font-size: 20px;
+  font-weight: 500px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*MEDIA QUERY larger tablet screens*/
@@ -306,6 +357,10 @@ footer {
     }
     #gallery4 img {
       width: 375px;
+    }
+    #backgroundimage {
+      visibility: collapse;
+      background-size: 100% 100%;
     }
     footer {
       width: 375px;
