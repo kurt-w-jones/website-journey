@@ -210,6 +210,7 @@ footer {
 #footerid {
   text-align: center;
 }
+
 /* Setup Biography table for the About page elements */
 
 #backgroundimage {
@@ -218,8 +219,7 @@ footer {
   background-position: center center;
   background-color: #ccc;
   opacity: 0.4;
-  background-size: 100% 100%;
-
+  background-size: 100%;
 }
 
 #backgroundimage p {
@@ -229,11 +229,26 @@ footer {
   color: #000
 }
 
+td {
+  max-width: 100%;
+}
+
 #kurtpic {
-  background-image: url("./images/Kurt_smallpic.jpg");
-  background-size: 100% 100%;
   height: 215px;
   width: 215px;
+}
+#sidebar {
+  width: 25%;
+  text-align: justify;
+}
+#qual {
+  width: 75%;
+  text-align: justify;
+}
+#qual p {
+
+  display: inline-block;
+
 }
 #jobrole p {
   font-size: 20px;
@@ -297,6 +312,9 @@ footer {
   }
   #gallery1 #gallery2 #gallery3 #gallery4 {
     display: block;
+  }
+  #sidebar {
+    text-align:left;
   }
   /*smaller phone screens */
   @media screen and (max-width: 375px) {
@@ -367,6 +385,12 @@ footer {
     #backgroundimage {
       visibility: collapse;
       background-size: 100% 100%;
+    }
+    #qual {
+      visibility: hidden;
+    }
+    #sidebar {
+      text-align:left;
     }
     footer {
       width: 375px;
