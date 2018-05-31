@@ -15,7 +15,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 header img {
@@ -54,7 +54,7 @@ nav ul li {
 
 nav a {
   color: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
@@ -83,7 +83,7 @@ nav a:active {
 
 #jumbotron {
   position: relative;
-  height: 250px;
+  height: 300px;
   background-image: url("./images/Coder.jpg");
   background-position: center center;
   width: 100%;
@@ -101,8 +101,8 @@ nav a:active {
 
 h1 {
   color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 700;
   font-size: 50px;
   text-transform: uppercase;
   margin: 0px 250px 0px 250px;
@@ -118,7 +118,7 @@ h2 {
 /* used the supporting class for most main sections of pages to assure alignment */
 
 .supporting {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', sans-serif;
   margin-left: 10px;
 }
 
@@ -171,7 +171,7 @@ dl {
 }
 
 #desc {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Alegreya', sans-serif;
 }
 
 #gallery1 {
