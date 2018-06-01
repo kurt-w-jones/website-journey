@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Rock Paper Scissors</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Midlife-Coder RPS Game">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="rps.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya:400,500,700" rel="stylesheet" type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="rps.js"></script>
+</head>
+
+<body>
+  <!-- Build a small header for navigation at top -->
+  <header>
+    <img src="./images/Coderlogo1.png" alt="coffee cup logo with Coder on it">
+
+    <nav>
+
+      <a href="#" id="menu-item"></a>
+
+      <ul>
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="projects.html" class="current"> Projects </a></li>
+        <li><a href="gallery.html"> Art Gallery </a></li>
+        <li><a href="about.html"> About Me </a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- Build a jumbotron image with centered text below menu -->
+  <section id="jumbotron">
+
+    <h1 id="theading">Welcome to</h1>
+    <h1>Midlife-Coder</h1>
+
+  </section>
+  <!-- left title bar -->
+  <div class="flex">
+    <div class="left_title_bar">
+      <h1 id="gamehead"> ROCK PAPER SCISSOR </h1>
+      <div class="rectangle">
+        <p class="top_rectangle">SCORE</p>
+        <p class="middle_rectangle">CHOICES AND RESULT</p>
+        <button class="bottom_rectangle">RESET</button>
+      </div>
+    </div>
+<!-- Style area for 3 user input buttons -->
+
+    <div class="game_area1">
+      <button class="circle_rock" class="cicle">
+          <a>ROCK</a>
+        </button>
+    </div>
+
+    <div class="game_area2">
+      <button class="circle_paper" class="cicle">
+          <a>PAPER</a>
+        </button>
+    </div>
+
+    <div class="game_area3">
+      <button class="circle_scissor" class="cicle">
+          <a>SCISSOR</a>
+        </button>
+    </div>
+  </div>
+  <!-- Footer section -->
+  <footer>
+    <div class="contain">
+      <p id="footerid">&copy; Midlife-Coder 2018</p>
+    </div>
+  </footer>
+</body>
+
+</html>

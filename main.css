@@ -97,6 +97,10 @@ nav a:active {
   padding-top: 110px;
 }
 
+/* styling of the click game link for Project 3 on project.html page */
+#clickgame {
+  margin-left: 225px;
+}
 /* stylizing the headings with next 2 items */
 
 h1 {
