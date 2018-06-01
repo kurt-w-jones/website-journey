@@ -89,6 +89,7 @@ nav a:active {
   width: 100%;
   text-align: center;
   display: block;
+  font-family: 'Questrial';
 }
 
 /* used this item to better align the heading on top of the jumbotron */
