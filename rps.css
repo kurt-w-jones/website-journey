@@ -31,10 +31,9 @@ body {
   justify-content: center;
 }
 
-.game_area2 {
+/* .game_area2 {
   flex: 2;
 
-  /* background-color: #97743a; */
   background-color: ghostwhite;
   background-blend-mode: multiply;
   display: flex;
@@ -45,13 +44,13 @@ body {
 .game_area3 {
   flex: 2;
 
-  /* background-color: #b0a18e; */
+
   background-color: ghostwhite;
   background-blend-mode: multiply;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 #gamehead {
   /* color: rgb(208, 96, 33); */
@@ -127,4 +126,10 @@ a {
   font-size: 2.5em;
   color: rgb(254, 254, 254);
   font-weight: bolder;
+}
+/* Media Screen settings for tablet/mobile screen */
+@media screen and (max-width: 604px) {
+  .flex {
+    flex-direction: column;
+  }
 }

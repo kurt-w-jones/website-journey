@@ -99,9 +99,9 @@ nav a:active {
 }
 
 /* styling of the click game link for Project 3 on project.html page */
-#clickgame {
-  margin-left: 225px;
-}
+
+
+
 /* stylizing the headings with next 2 items */
 
 h1 {
@@ -242,19 +242,21 @@ td {
   height: 215px;
   width: 215px;
 }
+
 #sidebar {
   width: 25%;
   text-align: justify;
 }
+
 #qual {
   width: 75%;
   text-align: justify;
 }
+
 #qual p {
-
   display: inline-block;
-
 }
+
 #jobrole p {
   font-size: 20px;
   font-weight: 500px;
@@ -319,84 +321,88 @@ td {
     display: block;
   }
   #sidebar {
-    text-align:left;
+    text-align: left;
   }
-  /*smaller phone screens */
-  @media screen and (max-width: 375px) {
-    header {
-      width: 375px;
-    }
-    #menu-item {
-      display: inline-block;
-      visibility: visible;
-    }
-    #jumbotron {
-      width: 100%;
-    }
-    nav ul, nav:active ul {
-      display: none;
-      position: absolute;
-      padding: 5px;
-      background: #fff;
-      border: 5px solid #444;
-      right: 1px;
-      top: 60px;
-      width: 30%;
-      border-radius: 4px 0 4px 4px;
-    }
-    nav li {
-      text-align: center;
-      width: 100%;
-      padding: 10px 0;
-      margin: 0;
-      color: #000;
-    }
-    nav ul li {
-      padding: 5px;
-      width: 100px;
-    }
-    nav:hover ul {
-      display: block;
-    }
-    nav a {
-      color: #000;
-    }
-    h1 {
-      margin: auto;
-      padding-top: 0px;
-    }
-    #theading {
-      padding-top: 80px;
-    }
-    .gallerycontain {
-      display: block;
-      grid-template-columns: none;
-      margin-left: auto;
-      margin-right: auto;
-      width: 375px;
-    }
-    #gallery1 img {
-      width: 375px;
-    }
-    #gallery2 img {
-      width: 375px;
-    }
-    #gallery3 img {
-      width: 375px;
-    }
-    #gallery4 img {
-      width: 375px;
-    }
-    #backgroundimage {
-      visibility: collapse;
-      background-size: 100% 100%;
-    }
-    #qual {
-      visibility: hidden;
-    }
-    #sidebar {
-      text-align:left;
-    }
-    footer {
-      width: 375px;
-    }
+}
+
+/*smaller phone screens */
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 375px;
+  }
+  #menu-item {
+    display: inline-block;
+    visibility: visible;
+  }
+  #jumbotron {
+    width: 100%;
+  }
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 1px;
+    top: 60px;
+    width: 30%;
+    border-radius: 4px 0 4px 4px;
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    color: #000;
+  }
+  nav ul li {
+    padding: 5px;
+    width: 100px;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  nav a {
+    color: #000;
+  }
+  h1 {
+    margin: auto;
+    padding-top: 0px;
+  }
+  #theading {
+    padding-top: 80px;
+  }
+  .gallerycontain {
+    display: block;
+    grid-template-columns: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
+  }
+
+  #gallery1 img {
+    width: 375px;
+  }
+  #gallery2 img {
+    width: 375px;
+  }
+  #gallery3 img {
+    width: 375px;
+  }
+  #gallery4 img {
+    width: 375px;
+  }
+  #backgroundimage {
+    visibility: collapse;
+    background-size: 100% 100%;
+  }
+  #qual {
+    visibility: hidden;
+  }
+  #sidebar {
+    text-align: left;
+  }
+  footer {
+    width: 375px;
+  }
