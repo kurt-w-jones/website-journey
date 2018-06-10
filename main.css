@@ -241,17 +241,29 @@ td {
 #kurtpic {
   height: 215px;
   width: 215px;
+  background-image: url("./images/Kurt_smallpic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
+#kurtHeader {
+  font-size: 20px;
+}
+#sidebarTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 10px;
+  font-size: 16px;
+}
 #sidebar {
-  width: 25%;
-  text-align: justify;
+ width: 25%
+  text-align: left;
 }
 
 #qual {
   width: 75%;
-  text-align: justify;
-}
+  text-align:center;
+  }
 
 #qual p {
   display: inline-block;
@@ -399,9 +411,14 @@ td {
   }
   #qual {
     visibility: hidden;
+    width: 0%;
+  }
+  #kurtHeader {
+    visibility: hidden;
   }
   #sidebar {
     text-align: left;
+    width: 100%;
   }
   footer {
     width: 375px;
